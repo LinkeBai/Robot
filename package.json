@@ -1,0 +1,34 @@
+{
+  "name": "calculator-ai",
+  "displayName": "Calculator AI",
+  "description": "智能计算器 - VS Code 接入 DeepSeek 大模型",
+  "version": "1.0.0",
+  "publisher": "student",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "calculator-ai.open",
+        "title": "Calculator AI: Open Calculator"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {}
+}
